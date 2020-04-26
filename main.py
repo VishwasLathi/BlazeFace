@@ -1,8 +1,5 @@
 import tensorflow as tf
-import numpy as np 
-import cv2
-# import pickle
-# import glob 
+import numpy as np  
 import os 
 import time 
 import argparse

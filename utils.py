@@ -1,5 +1,6 @@
 import numpy as np
 from PIL import Image
+import scipy.io
 
 #calculate the intersection over union 
 #box format : [x_left,y_top, width, height]
@@ -80,3 +81,5 @@ def map_anchors(path_to_annotations):
     # print(np.concatenate((np.array(batch_score_16),np.array(batch_score_8)),axis=1).shape, np.concatenate((np.array(batch_loc_16),np.array(batch_loc_8)),axis=1).shape)
 
     return np.concatenate((np.array(batch_score_16),np.array(batch_score_8)),axis=1), np.concatenate((np.array(batch_loc_16),np.array(batch_loc_8)),axis=1)
+
+mat = scipy.io.loadmat('file.mat')    
