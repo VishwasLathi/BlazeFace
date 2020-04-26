@@ -16,9 +16,6 @@ def smooth_l1(x):
 #dimensions of pred : [batch_size, 320, 5] where the last dimension corresponds to score ad the 4 predicted location values.
 #second dimentions (320) corresponds to the total feature points (16*16 + 8*8) for to the two feature maps of sizes 16*16 and 8*8. 
 def smooth_l1_loss(true, pred):
-
-
-
     face_label = true[:, :, :1]
     #target center x coordinate. 
     gxs = true[:, :, 1:2]
